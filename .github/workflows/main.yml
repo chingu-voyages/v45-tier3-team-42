@@ -1,0 +1,14 @@
+name: Cypress tests
+on: push
+jobs:
+  cypress-run:
+    runs-on: ubuntu-22.04
+    steps:
+    - name: Run E2E tests
+      uses: cypress-io/github-action@v5
+
+    - name: Run Component Testing
+      uses: cypress-io/github-action@v5
+      with:
+        install: false
+        component: true
