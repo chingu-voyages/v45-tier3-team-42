@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
-import Layout from '../components/Layout';
+import Layout from './Layout';
 import { GetServerSideProps } from 'next';
+import UpdateItemForm from '../components/UpdateItemForm';
+import Link from 'next/link';
 
 type Item = {
   _id: string;
@@ -15,26 +17,39 @@ type Props = {
 function ItemPage({ item }: Props) {
   const router = useRouter();
 
-  function handleEdit() {
-    // Code to handle editing (You can expand this later)
-    alert('Edit functionality not implemented yet!');
+  async function handleUpdate(updatedItem: { name: string; description: string }) {
+    try {
+      const res = await fetch(`/api/updateItem?_id=${item._id}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(updatedItem),
+      });
+      if (res.status === 200) {
+        router.push('/');
+      } else {
+        throw new Error(await res.text());
+      }
+    } catch (error) {
+      console.error('Failed to update the item:', error);
+    }
   }
 
   async function handleDelete() {
-    // Make a request to the deleteItem API endpoint
     try {
       const res = await fetch(`/api/deleteItem?_id=${item._id}`, { method: 'DELETE' });
       const data = await res.json();
-      if (data.success) {
-        // Redirect to the homepage after successful deletion
+      console.log('Delete API Response:', data);
+      if (data.acknowledged && data.deletedCount === 1) {
         router.push('/');
       } else {
-        console.error('Failed to delete item');
+        console.error('Failed to delete item', data);
       }
     } catch (error) {
       console.error('An error occurred while deleting the item.', error);
     }
-  }
+}
 
   if (!item) {
     return (
@@ -52,7 +67,7 @@ function ItemPage({ item }: Props) {
         <h1 className="text-2xl mb-4">{item.name}</h1>
         <p>{item.description}</p>
         <div className="mt-4">
-          <button onClick={handleEdit} className="mr-4 p-2 bg-blue-500 text-white">Edit</button>
+          <UpdateItemForm initialData={item} onUpdateItem={handleUpdate} />
           <button onClick={handleDelete} className="p-2 bg-red-500 text-white">Delete</button>
         </div>
       </div>

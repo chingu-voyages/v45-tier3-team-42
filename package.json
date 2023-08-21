@@ -1,14 +1,8 @@
 {
-<<<<<<< HEAD
-=======
-  "name": "chingu-app",
-  "version": "0.1.0",
->>>>>>> e3839aae389c434edd5ed340d59b764cb99e834f
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-<<<<<<< HEAD
     "start": "next start"
   },
   "dependencies": {
@@ -24,27 +18,5 @@
     "@types/node": "18.7.5",
     "@types/react": "16.9.17",
     "typescript": "4.6.3"
-=======
-    "start": "next start",
-    "lint": "next lint",
-    "cypress:open": "cypress open"
-  },
-  "dependencies": {
-    "@types/node": "20.5.0",
-    "@types/react": "18.2.20",
-    "@types/react-dom": "18.2.7",
-    "autoprefixer": "10.4.15",
-    "eslint": "8.47.0",
-    "eslint-config-next": "13.4.15",
-    "next": "13.4.15",
-    "postcss": "8.4.27",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.1.6"
-  },
-  "devDependencies": {
-    "cypress": "^12.17.3"
->>>>>>> e3839aae389c434edd5ed340d59b764cb99e834f
   }
 }
