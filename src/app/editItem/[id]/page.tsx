@@ -5,10 +5,7 @@ async function getItemById(id:string){
 
   try {
     const res = await fetch(`${process.env.API_URL}/api/items/${id}`, {
-      method:"GET",
-      headers: {
-        "Content-type": "application/json",
-      },
+      cache: "no-store",
     });
 
     if (!res.ok) {

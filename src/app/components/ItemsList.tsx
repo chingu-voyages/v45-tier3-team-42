@@ -7,8 +7,7 @@ import RemoveBtn from "./RemoveBtn";
 const getItems = async () => {
   try {
     const res = await fetch(`${process.env.API_URL}/api/items/`, {
-      method:"GET",
-      cache: "no-store"
+      cache: "no-store",
     });
 
     if (!res.ok) {
