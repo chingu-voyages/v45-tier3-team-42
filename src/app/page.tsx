@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import ItemsList from './components/ItemsList'
 
-
 export default async function Home() {
 
   return (
@@ -11,4 +10,3 @@ export default async function Home() {
   )
 
 }
-
