@@ -24,7 +24,7 @@ export default async function ItemsList() {
 
   return (
     <>
-      {items.map((item:any) => (
+      { items ? items.map((item:any) => (
         <div
           key={item._id}
           className="p-4 border border-slate-300 my-3 flex justify-between gap-5 items-start"
@@ -41,7 +41,7 @@ export default async function ItemsList() {
             </Link>
           </div>
          </div>
-      ))}
+      )): []}
     </>
   );
 }
