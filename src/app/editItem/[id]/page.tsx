@@ -21,7 +21,7 @@ async function getItemById(id:string){
 
 export default async function EditItem({ params }:any) {
   const { id } = params;
-  console.log(params)
+
 
   const  { item } = await getItemById(id);
 

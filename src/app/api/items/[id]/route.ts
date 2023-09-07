@@ -17,6 +17,5 @@ export async function GET(req:Request, { params }:any) {
 
   const { id } = params;
   const item = await Item.findOne({ _id: id });
-  console.log(item)
   return NextResponse.json({ item }, { status: 200 });
 }

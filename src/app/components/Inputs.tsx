@@ -8,9 +8,7 @@ interface InputProps {
   type: string;
 }
 
-/**
- * An input element
- */
+
 const Input: React.FC<InputProps> = (props: InputProps) => {
   const {
     value = "",
@@ -35,5 +33,4 @@ const Input: React.FC<InputProps> = (props: InputProps) => {
   );
 };
 
-{/* <Input />; */}
 export default Input;
