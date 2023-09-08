@@ -1,9 +1,10 @@
-import Image from 'next/image'
+import ItemsList from './components/ItemsList'
 
 export default function Home() {
   return (
-    <>
-    home
-    </>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+     <ItemsList/>
+    </main>
   )
+
 }
