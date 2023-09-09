@@ -55,7 +55,7 @@ const Newsletter: React.FC<NewsletterProps> = () => {
 
                 <button
                   type="submit"
-                  className="m-2 p-2 w-40 bg-green-500 border-none text-white text-base rounded-md cursor-pointer"
+                  className="m-2 p-2 w-40 bg-teal-700 border-none text-white text-base rounded-md cursor-pointer"
                 >
                   Subscribe
                 </button>
