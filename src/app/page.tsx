@@ -1,6 +1,5 @@
-import Image from 'next/image'
-import Newsletter from '@/components/newsletter'
-import ListItem from '@/components/blogList'
+import Newsletter from 'components/newsletter'
+import ListItem from 'components/blogList'
 
 export default function Home() {
 
@@ -25,15 +24,10 @@ export default function Home() {
     },
   ];
   return (
-    <>
-      home
-
-      <div className='flex flex-col items-center'>
-        <Newsletter />
-        <ListItem items={items} />
-      </div>
-
-
-    </>
+    <main className="flex bg-gray-200 h-max flex-col items-center justify-between p-24">
+      <Newsletter />
+      <ListItem items={items} />
+    </main>
   )
+
 }
