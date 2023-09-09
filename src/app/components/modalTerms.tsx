@@ -29,17 +29,17 @@ const Modal: React.FC<ModalProps> = ({ showModal, closeModal }) => {
             </div>
             <div className="relative p-6 flex-auto">
               <p className="my-4 text-slate-500 text-md leading-relaxed">
-                "Website is a 100% independent news service and is not responsible for the offers published here. For each advertisement, we strive to obtain the clearest and most complete information possible. Whenever available, we include the official information of each promotion and establishment.
+                Website is a 100% independent news service and is not responsible for the offers published here. For each advertisement, we strive to obtain the clearest and most complete information possible. Whenever available, we include the official information of each promotion and establishment.
 
                 <br /> If any of the offers are not honored by any of the institutions or if you need more information about this promotion, we kindly ask you to share by commenting on the specific offer so that other consumers have this valuable information. We are a true community of smart shoppers! We also suggest that you contact the customer service department of the company(ies) responsible and file a complaint.
 
                 <br /> All logos and images displayed here are solely the property of the companies referenced and are presented for illustrative purposes.
 
-                <br /> Editors and moderators can edit or delete content published on this site at any time. Some reasons for doing so may include creating offers or not adhering to the site's rules (please read the code of conduct).
+                <br /> Editors and moderators can edit or delete content published on this site at any time. Some reasons for doing so may include creating offers or not adhering to the site&apos;s rules (please read the code of conduct).
 
                 <br /> Copying our content to other sites without permission is prohibited.
 
-                <br />  Only administrators have access to the email address on Pelando, and these will never be shared with third parties unless required by law."
+                <br />  Only administrators have access to the email address on Pelando, and these will never be shared with third parties unless required by law.
               </p>
             </div>
             <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
