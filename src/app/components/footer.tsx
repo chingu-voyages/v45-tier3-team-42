@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
     const year = getYear();
 
     return (
-        <footer className="bg-white text-black py-4 absolute bottom-0 w-full">
+        <footer className="bg-white text-black py-4  w-full">
             <div className="container mx-auto flex items-center justify-between">
                 <div>
                     EcoBagain GmbH © {year} All rights reserved.
