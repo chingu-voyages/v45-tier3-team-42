@@ -55,7 +55,7 @@ const Newsletter: React.FC<NewsletterProps> = () => {
 
                 <button
                   type="submit"
-                  className="m-2 p-2 w-40 bg-green-500 border-none text-white text-base rounded-md cursor-pointer"
+                  className="m-2 p-2 w-40 bg-teal-700 border-none text-white text-base rounded-md cursor-pointer"
                 >
                   Subscribe
                 </button>
@@ -63,7 +63,7 @@ const Newsletter: React.FC<NewsletterProps> = () => {
 
             </div>
             <div className="my-4 lg:mb-0">
-              <p className="text-md text-blue-500 hover:text-blue-700 cursor-pointer">
+              <p className="text-md text-gray-700 cursor-pointer">
                 <span onClick={() => setShowModal(true)}> Terms of Service and Privacy Policy</span>
               </p>
             </div>

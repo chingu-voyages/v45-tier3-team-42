@@ -1,5 +1,5 @@
 import Newsletter from 'components/newsletter'
-import ListItem from 'components/blogList'
+import Bloglist from 'components/blogList'
 
 export default function Home() {
 
@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <main className="flex bg-gray-200 h-max flex-col items-center justify-between p-24">
       <Newsletter />
-      <ListItem items={items} />
+      <Bloglist items={items} />
     </main>
   )
 
