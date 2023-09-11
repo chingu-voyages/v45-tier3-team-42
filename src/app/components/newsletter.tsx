@@ -41,9 +41,7 @@ const Newsletter: React.FC<NewsletterProps> = () => {
           </div>
           <div className="md:mb-0 flex flex-col items-center">
             <div className="md:flex flex-row my-4">
-              {!isEmailValid ? (
-                <p>Please enter a valid email address</p>
-              ) : null}
+
               <form className='flex flex-col items-center' onSubmit={handleSubmit}>
                 <input
                   type="email"
@@ -52,7 +50,9 @@ const Newsletter: React.FC<NewsletterProps> = () => {
                   onChange={handleInput}
                   className="p-2 text-base text-gray-700 border-2 border-gray-300 rounded-md"
                 />
-
+                {!isEmailValid ? (
+                  <p className='text-red-500 text-sm'>Please enter with a valid email address!</p>
+                ) : null}
                 <button
                   type="submit"
                   className="m-2 p-2 w-40 bg-teal-700 border-none text-white text-base rounded-md cursor-pointer"
