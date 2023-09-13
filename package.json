@@ -21,6 +21,7 @@
     "next": "13.4.16",
     "next-api-validation": "^1.0.5",
     "postcss": "8.4.27",
+    "puppeteer": "^21.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
